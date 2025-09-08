@@ -1,0 +1,104 @@
+{
+  "bugs": [
+    {
+      "title": "Login button not responsive",
+      "description": "When clicking the login button, nothing happens. The form does not submit and no error message is displayed. This occurs on Chrome and Firefox browsers. Steps to reproduce: 1. Open login page, 2. Enter valid credentials, 3. Click login button, 4. Observe no response."
+    },
+    {
+      "title": "Application crashes on startup",
+      "description": "The application terminates unexpectedly immediately after launch with error code 0x80004005. This happens consistently on Windows 10 machines. Stack trace shows memory access violation in the main thread initialization."
+    },
+    {
+      "title": "Search functionality returns empty results",
+      "description": "The search feature returns no results even when searching for terms that should match existing data. Database connection appears normal. Issue affects all users across different browsers."
+    },
+    {
+      "title": "User registration form validation error",
+      "description": "Email validation incorrectly rejects valid email addresses containing plus signs or dots before the @ symbol. For example, test.user+tag@example.com is rejected as invalid."
+    },
+    {
+      "title": "Password reset email not delivered",
+      "description": "Password reset emails are not being sent to users. SMTP server configuration appears correct and test emails work. Only affects password reset functionality specifically."
+    },
+    {
+      "title": "Dashboard loads slowly on mobile devices",
+      "description": "The main dashboard takes 10-15 seconds to load on mobile devices, compared to 2-3 seconds on desktop. Network analysis shows excessive API calls and large asset downloads."
+    },
+    {
+      "title": "File upload fails for large files",
+      "description": "File uploads fail for files larger than 50MB with a timeout error. Server logs show request timeout after 30 seconds. Smaller files upload successfully without issues."
+    },
+    {
+      "title": "Database connection timeout during peak hours",
+      "description": "Users experience database connection timeouts during peak usage hours (9-11 AM and 2-4 PM). Connection pool may be insufficient for concurrent load."
+    },
+    {
+      "title": "Login form accepts empty credentials",
+      "description": "The login form allows submission with empty username and password fields. Should display validation error instead of attempting authentication with empty values."
+    },
+    {
+      "title": "Memory leak in background service",
+      "description": "Background worker process shows steadily increasing memory usage over time, reaching 2GB+ after 24 hours of operation. Requires daily service restart to prevent system instability."
+    },
+    {
+      "title": "Navigation menu disappears on mobile",
+      "description": "The main navigation menu is not visible on mobile devices in portrait mode. Menu appears correctly in landscape mode and on tablets. CSS media query issue suspected."
+    },
+    {
+      "title": "API returns incorrect status codes",
+      "description": "REST API endpoints return HTTP 200 status for error conditions instead of appropriate error codes like 404 or 500. Makes error handling difficult for client applications."
+    },
+    {
+      "title": "Session expires too quickly",
+      "description": "User sessions expire after only 15 minutes of inactivity, forcing frequent re-authentication. Users report this interrupts their workflow and reduces productivity."
+    },
+    {
+      "title": "Report generation fails with special characters",
+      "description": "PDF report generation fails when data contains special characters like accented letters or symbols. Process terminates with encoding error in the report engine."
+    },
+    {
+      "title": "Search results pagination broken",
+      "description": "Pagination controls in search results do not work correctly. Clicking 'Next' or page numbers shows the same first page results instead of subsequent pages."
+    },
+    {
+      "title": "User profile image upload corrupted",
+      "description": "Uploaded profile images appear corrupted or distorted after processing. Issue affects JPEG files specifically. PNG files upload and display correctly."
+    },
+    {
+      "title": "Email notifications sent to wrong addresses",
+      "description": "System notifications are being sent to incorrect email addresses. Appears to be using outdated email addresses from user profiles rather than current ones."
+    },
+    {
+      "title": "Date picker shows wrong year range",
+      "description": "Date picker component displays years from 1900-2020, missing current and future years. Users cannot select dates after December 31, 2020 in forms."
+    },
+    {
+      "title": "Export functionality generates empty files",
+      "description": "Data export feature creates CSV files with headers only, no data rows. Database queries return correct data when tested manually. Export worked correctly until recent update."
+    },
+    {
+      "title": "Password complexity validation too strict",
+      "description": "Password validation requires special characters that are not clearly specified, causing user frustration. Error message is vague: 'Password does not meet complexity requirements'."
+    },
+    {
+      "title": "Chart rendering fails in Internet Explorer",
+      "description": "Data visualization charts do not render in Internet Explorer 11. Charts display correctly in modern browsers. Console shows JavaScript compatibility errors."
+    },
+    {
+      "title": "Form autosave conflicts with manual save",
+      "description": "Automatic form saving conflicts with manual save operations, sometimes overwriting user changes. Users report losing work when both systems attempt to save simultaneously."
+    },
+    {
+      "title": "Print function cuts off page content",
+      "description": "Print preview and actual printing cuts off content that extends beyond single page width. Content should wrap or scale to fit printer page dimensions."
+    },
+    {
+      "title": "Multi-file upload progress incorrect",
+      "description": "When uploading multiple files simultaneously, the progress bar shows incorrect completion percentage. Individual file progress is accurate, but overall progress is wrong."
+    },
+    {
+      "title": "Login button unresponsive after failed attempt",
+      "description": "After entering incorrect credentials, the login button becomes unclickable until page refresh. Form validation shows error message but button remains disabled incorrectly."
+    }
+  ]
+}
